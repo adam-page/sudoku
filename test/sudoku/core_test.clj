@@ -6,6 +6,7 @@
   (:require [clojure.test :refer :all]
             [sudoku.core :refer :all]))
 
+;;; Environment and Variable Setup
 (def prefixes
   "Puzzle name prefixes."
   ["s01" "s02" "s03" "s04" "s05" "s06" "s07" "s08"
@@ -41,9 +42,8 @@
   "Puzzle and solution pathnames."
   (map vector puzz-paths sol-paths))
 
-(defn get-iter
-  [])
 
+;;; Tests
 (deftest backtracker-tester
   (testing "Testing the backtracker solver against all puzzles and solutions."
     (is (every? #(= (get-puzzle (second %))
