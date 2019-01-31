@@ -8,6 +8,7 @@
                       :url "http://www.eclipse.org/legal/epl-v10.html"}
             :dependencies [[org.clojure/clojure "1.8.0"]
                            [net.mikera/core.matrix "0.62.0"]]
+            :plugins [[lein-kibit "0.1.6"]]
             :main ^:skip-aot sudoku.core
             :target-path "target/%s/"
             :profiles {:uberjar {:aot :all}}
