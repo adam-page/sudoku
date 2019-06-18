@@ -23,7 +23,7 @@
                       ((get puzzles :hard) :solution))))))
 
 (defn get-puzzle
-  "Get a sudoku puzzle from a file specified by path."
+  "Get a sudoku puzzle from a file specified by its path."
   [path]
   (if (re-find #"_s" path)
     (m/matrix
